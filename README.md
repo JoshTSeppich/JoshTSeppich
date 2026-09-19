@@ -34,7 +34,7 @@ I run [Foxworks](https://foxworks.dev) with William Travis Stanley; we build int
 
 ## How I work
 
-On bankbot, Lantern and cairn I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and every commit passes the same gate (format, lint, strict types, tests — see [bankbot's CI workflow](https://github.com/JoshTSeppich/bankbot/blob/main/.github/workflows/ci.yml)). eventfold and FindFold are working tools I use; each has a small test suite (FindFold around the scoring band, eventfold around the credential fix) and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
+On bankbot I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and every commit passes format, lint, strict types and tests in pre-commit and in CI. Lantern runs its full test suite in CI. cairn is a plugin — markdown and agent definitions — so its check is the manual test plan in the repo, not a CI gate. eventfold and FindFold are working tools I use; each has a small test suite (FindFold around the scoring band, eventfold around the credential fix) and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
 
 ## Elsewhere
 
