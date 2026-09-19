@@ -24,7 +24,7 @@ I run [Foxworks](https://foxworks.dev), a one-person shop that builds internal t
 
 ## How I work
 
-I prove the risky part first, with a throwaway spike, before I scaffold anything. I write the decision down before the code, as an ADR, in one paragraph. I keep one linear main branch and every commit passes the same gate. I use AI tooling for most of the typing and I can explain every line it produced.
+On bankbot, Lantern and cairn I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and gate every commit on format, lint, strict types and tests. eventfold and FindFold are working tools I use; FindFold has no test suite; eventfold has one test, for the credential fix and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
 
 ## Elsewhere
 
