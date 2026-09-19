@@ -10,7 +10,7 @@ The accessibility tree is the most stable description of a screen I've found so 
 - **[Lantern](https://github.com/JoshTSeppich/Lantern)** — Fingerprints a web page by tabbing through it and recording the role and state of every element it lands on. 259 tests. Across 40 sites the method found only five shape clusters, which means it under-discriminates on medium pages. I wrote that down instead of tuning until it looked better.
 - **[cairn](https://github.com/JoshTSeppich/cairn)** — A Claude Code plugin that packages how I work with agents: no claim without a test, no design without a written decision, no scaffolding before the risky part is proven.
 
-## Other solo work
+## Other work
 
 - **[Conductor](https://github.com/JoshTSeppich/Conductor)** — Runs several Claude Code sessions from one place: a tmux CLI, a daemon, a web dashboard, an Electron workstation. I built it because I was copy-pasting between an architect chat and four terminal panes and the copy-paste was the bottleneck.
 - **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound from a phone. One HTML file, DSP written by hand. The finding was physical: one phone can't separate its own speaker from its mic, and iOS echo cancellation eats the sweep, so the design moved to two devices.
