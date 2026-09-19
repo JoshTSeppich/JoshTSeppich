@@ -27,7 +27,7 @@ Private or unfinished, so no links. Each one is a real build I can walk through.
 
 ## Built for Foxworks
 
-I run [Foxworks](https://foxworks.dev), a one-person shop that builds internal tools for small businesses. These two are its own tooling.
+I run [Foxworks](https://foxworks.dev) with William Travis Stanley; we build internal tools for small businesses. These two are its own tooling.
 
 - **[eventfold](https://github.com/JoshTSeppich/eventfold)** — Desktop app that runs B2B prospecting end to end: ICP generation, company search, lead tracking, email drafts.
 - **[FindFold](https://github.com/JoshTSeppich/FindFold)** — Command-line pipeline that finds local service businesses that fit a customer profile, scores them cheaply, and only spends model calls on the ambiguous ones.
