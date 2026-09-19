@@ -13,7 +13,7 @@ The accessibility tree is the most honest description of a screen. The DOM is wh
 ## Other solo work
 
 - **[Conductor](https://github.com/JoshTSeppich/Conductor)** — Runs several Claude Code sessions from one place: a tmux CLI, a daemon, a web dashboard, an Electron workstation. I built it because I was copy-pasting between an architect chat and four terminal panes and the copy-paste was the bottleneck.
-- **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound. One HTML file, no build step. I wanted to know if a laptop microphone was enough. It is, roughly.
+- **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound from a phone. One HTML file, DSP written by hand. The finding was physical: one phone can't separate its own speaker from its mic, and iOS echo cancellation eats the sweep, so the design moved to two devices.
 
 ## Built for Foxworks
 
