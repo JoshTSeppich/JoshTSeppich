@@ -13,7 +13,17 @@ The accessibility tree is the most stable description of a screen I've found so 
 ## Other solo work
 
 - **[Conductor](https://github.com/JoshTSeppich/Conductor)** — Runs several Claude Code sessions from one place: a tmux CLI, a daemon, a web dashboard, an Electron workstation. I built it because I was copy-pasting between an architect chat and four terminal panes and the copy-paste was the bottleneck.
-- **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound from a phone. One HTML file, DSP written by hand. The finding was physical: one phone can't separate its own speaker from its mic, and iOS echo cancellation eats the sweep, so the design moved to two devices.
+- **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound. One HTML file, no build step. I wanted to know if a laptop microphone was enough. It is, roughly.
+
+## Not on GitHub yet — ask me
+
+Private or unfinished, so no links. Each one is a real build I can walk through.
+
+- **Registry** — The design the three repos above are pieces of: turn an application's accessibility tree into a queryable API, so an agent asks "what can I do on this screen" instead of parsing markup. Lantern is its classifier, cairn is the discipline it was built under, bankbot is what it looks like pointed at a bank.
+- **RECOGNITION** — A recursive multi-agent orchestrator. Each agent runs with an injected identity, the topology fractures a problem across them and converges the results, and the loop stops on a semantic fixed point instead of a step count.
+- **OBAC** — Opacity-Based Agent Chaining. A validation architecture for chains of agents where each link can only see what the previous one chose to expose. Written up with a formal argument, not just a diagram.
+- **Counsel AI** — Eviction-defense analysis for Utah tenants: scrapes the case documents, runs them through Claude, produces the arguments a person without a lawyer would otherwise not find. I built it because the people who need it most can't pay for it.
+- **A canvassing tool for a school-board race** — FastAPI, Leaflet, SQLite. Small, and it got used.
 
 ## Built for Foxworks
 
@@ -24,7 +34,7 @@ I run [Foxworks](https://foxworks.dev), a one-person shop that builds internal t
 
 ## How I work
 
-On bankbot, Lantern and cairn I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and every commit passes the same gate (format, lint, strict types, tests — see [bankbot's CI workflow](https://github.com/JoshTSeppich/bankbot/blob/main/.github/workflows/ci.yml)). eventfold and FindFold are working tools I use; each has a small test suite (FindFold around the scoring band, eventfold around the credential fix) and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
+I prove the risky part first, with a throwaway spike, before I scaffold anything. I write the decision down before the code, as an ADR, in one paragraph. I keep one linear main branch and every commit passes the same gate (format, lint, strict types, tests — see [bankbot's CI workflow](https://github.com/JoshTSeppich/bankbot/blob/main/.github/workflows/ci.yml)). I use AI tooling for most of the typing and I can explain every line it produced.
 
 ## Elsewhere
 
