@@ -4,7 +4,7 @@ I build AI agents and the layer underneath them that lets them operate real soft
 
 ## The idea I keep coming back to
 
-The accessibility tree is the most honest description of a screen. The DOM is whatever a framework emitted this deploy. A screenshot is pixels. The accessibility tree is what a page has to expose to work at all, and it exists for desktop apps too. Three of the repos below are the same idea from different angles.
+The accessibility tree is the most stable description of a screen I've found so far. The DOM is whatever a framework emitted this deploy. A screenshot is pixels. The accessibility tree is what a page has to expose to work at all, and it exists for desktop apps too. Three of the repos below are the same idea from different angles. Lantern's results say where that premise runs out.
 
 - **[bankbot](https://github.com/JoshTSeppich/bankbot)** — An LLM drives a legacy bank UI once. The run compiles into a typed, versioned capability that replays with no model in the loop, classifies "no such member" as an answer instead of a crash, and hands the live browser to a human when it is stuck. The model discovers; the artifact is the product.
 - **[Lantern](https://github.com/JoshTSeppich/Lantern)** — Fingerprints a web page by tabbing through it and recording the role and state of every element it lands on. 259 tests. Across 40 sites the method found only five shape clusters, which means it under-discriminates on medium pages. I wrote that down instead of tuning until it looked better.
@@ -24,7 +24,7 @@ I run [Foxworks](https://foxworks.dev), a one-person shop that builds internal t
 
 ## How I work
 
-On bankbot, Lantern and cairn I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and gate every commit on format, lint, strict types and tests. eventfold and FindFold are working tools I use; FindFold has no test suite; eventfold has one test, for the credential fix and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
+On bankbot, Lantern and cairn I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and every commit passes the same gate (format, lint, strict types, tests — see [bankbot's CI workflow](https://github.com/JoshTSeppich/bankbot/blob/main/.github/workflows/ci.yml)). eventfold and FindFold are working tools I use; each has a small test suite (FindFold around the scoring band, eventfold around the credential fix) and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
 
 ## Elsewhere
 
