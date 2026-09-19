@@ -13,7 +13,7 @@ The accessibility tree is the most stable description of a screen I've found so 
 ## Other solo work
 
 - **[Conductor](https://github.com/JoshTSeppich/Conductor)** — Runs several Claude Code sessions from one place: a tmux CLI, a daemon, a web dashboard, an Electron workstation. I built it because I was copy-pasting between an architect chat and four terminal panes and the copy-paste was the bottleneck.
-- **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound. One HTML file, no build step. I wanted to know if a laptop microphone was enough. It is, roughly.
+- **[Beacon](https://github.com/JoshTSeppich/Beacon)** — Maps a room with sound from a phone. One HTML file, DSP written by hand. The finding was physical: one phone can't separate its own speaker from its mic, and iOS echo cancellation eats the sweep, so the design moved to two devices.
 
 ## Not on GitHub yet — ask me
 
@@ -34,7 +34,7 @@ I run [Foxworks](https://foxworks.dev), a one-person shop that builds internal t
 
 ## How I work
 
-I prove the risky part first, with a throwaway spike, before I scaffold anything. I write the decision down before the code, as an ADR, in one paragraph. I keep one linear main branch and every commit passes the same gate (format, lint, strict types, tests — see [bankbot's CI workflow](https://github.com/JoshTSeppich/bankbot/blob/main/.github/workflows/ci.yml)). I use AI tooling for most of the typing and I can explain every line it produced.
+On bankbot, Lantern and cairn I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and every commit passes the same gate (format, lint, strict types, tests — see [bankbot's CI workflow](https://github.com/JoshTSeppich/bankbot/blob/main/.github/workflows/ci.yml)). eventfold and FindFold are working tools I use; each has a small test suite (FindFold around the scoring band, eventfold around the credential fix) and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
 
 ## Elsewhere
 
