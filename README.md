@@ -17,12 +17,13 @@ The accessibility tree is the most stable description of a screen I've found so 
 
 ## Not on GitHub yet — ask me
 
-Private or unfinished, so no links. Each one is a real build I can walk through.
+Private or unfinished, so no links. Each one is real work I can walk through — some running, some proved on paper first.
 
-- **Registry** — The design the three repos above are pieces of: turn an application's accessibility tree into a queryable API, so an agent asks "what can I do on this screen" instead of parsing markup. Lantern is its classifier, cairn is the discipline it was built under, bankbot is what it looks like pointed at a bank.
-- **RECOGNITION** — A recursive multi-agent orchestrator. Each agent runs with an injected identity, the topology fractures a problem across them and converges the results, and the loop stops on a semantic fixed point instead of a step count.
+- **Registry** — The design the three repos above are pieces of: turn an application's accessibility tree into a queryable API, so an agent asks "what can I do on this screen" instead of parsing markup. Lantern is its classifier, cairn is the discipline it was built under, bankbot is what it looks like pointed at a bank. Specified as sixteen binaries in a frozen master spec with a pre-registered validation plan: TypeScript and Python over Playwright and the Chrome DevTools Protocol, SQLite for state.
+- **Sherpa** — A passive browser-aware guide. A Rust launcher spawns Chrome with an isolated profile, a Node daemon owns the DevTools session and exposes it to Claude as an MCP server, and a Tauri v2 + React overlay answers grounded questions about the page you're on, by text or voice. Lantern is its classifier. 2149 tests.
+- **RECOGNITION** — A recursive multi-agent orchestrator. Each agent runs with an injected identity, the topology fractures a problem across them and converges the results, and the loop stops on a semantic fixed point instead of a step count. Written up as a PRD and a technical report with the formal foundation: six definitions, three lemmas, three theorems. Design and proof so far; the build comes next.
 - **OBAC** — Opacity-Based Agent Chaining. A validation architecture for chains of agents where each link can only see what the previous one chose to expose. Written up with a formal argument, not just a diagram.
-- **Counsel AI** — Eviction-defense analysis for Utah tenants: scrapes the case documents, runs them through Claude, produces the arguments a person without a lawyer would otherwise not find. I built it because the people who need it most can't pay for it.
+- **Counsel AI** — Eviction-defense analysis for Utah tenants: scrapes the case documents, runs them through Claude, produces the arguments a person without a lawyer would otherwise not find. I built it because the people who need it most can't pay for it. TypeScript: Playwright pulls the filings, pdf-parse reads them, Claude does the analysis, and a SQLite graph store holds the case structure.
 - **A canvassing tool for a school-board race** — FastAPI, Leaflet, SQLite. Built for a campaign; never deployed.
 
 ## Built for Foxworks
