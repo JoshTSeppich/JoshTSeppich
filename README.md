@@ -23,7 +23,7 @@ Private or unfinished, so no links. Each one is a real build I can walk through.
 - **RECOGNITION** — A recursive multi-agent orchestrator. Each agent runs with an injected identity, the topology fractures a problem across them and converges the results, and the loop stops on a semantic fixed point instead of a step count.
 - **OBAC** — Opacity-Based Agent Chaining. A validation architecture for chains of agents where each link can only see what the previous one chose to expose. Written up with a formal argument, not just a diagram.
 - **Counsel AI** — Eviction-defense analysis for Utah tenants: scrapes the case documents, runs them through Claude, produces the arguments a person without a lawyer would otherwise not find. I built it because the people who need it most can't pay for it.
-- **A canvassing tool for a school-board race** — FastAPI, Leaflet, SQLite. Small, and it got used.
+- **A canvassing tool for a school-board race** — FastAPI, Leaflet, SQLite. Built for a campaign; never deployed.
 
 ## Built for Foxworks
 
