@@ -26,13 +26,6 @@ Private or unfinished, so no links. Each one is real work I can walk through —
 - **Counsel AI** — Eviction-defense analysis for Utah tenants: scrapes the case documents, runs them through Claude, produces the arguments a person without a lawyer would otherwise not find. I built it because the people who need it most can't pay for it. TypeScript: Playwright pulls the filings, pdf-parse reads them, Claude does the analysis, and a SQLite graph store holds the case structure.
 - **A canvassing tool for a school-board race** — FastAPI, Leaflet, SQLite. Built for a campaign; never deployed.
 
-## Built for Foxworks
-
-I run [Foxworks](https://foxworks.dev) with William Travis Stanley; we build internal tools for small businesses. These two are its own tooling.
-
-- **[eventfold](https://github.com/JoshTSeppich/eventfold)** — Desktop app that runs B2B prospecting end to end: it generates an ideal customer profile from a NAICS code with Claude, pulls matching companies and contacts from Apollo, tracks outreach in a leads table, drafts cold emails, and turns feature ideas into GitHub issues. Tauri v2 around React 18, with Rust for the network calls, an SQLite cache, and the OS keychain for API keys. It replaced five standalone tools that passed data to each other through the clipboard and each kept their own copy of the keys.
-- **[FindFold](https://github.com/JoshTSeppich/FindFold)** — Command-line pipeline that scrapes Google Maps or Bing for local service businesses, fetches each homepage, scores it against a customer profile with keyword rules, and sends only the ambiguous band (0.40 to 0.72) to Claude Haiku, ten leads per request. Clear passes and clear fails never cost a model call, and paid Apollo enrichment comes last, only for what survived. It remembers the domains it has already processed so a business is never enriched twice.
-
 ## How I work
 
 On bankbot I prove the risky part first with a throwaway spike, write each design decision as a one-paragraph ADR before the code, and every commit passes format, lint, strict types and tests in pre-commit and in CI. Lantern runs its full test suite in CI. cairn is a plugin — markdown and agent definitions — so its check is the manual test plan in the repo, not a CI gate. eventfold and FindFold are working tools I use; each has a small test suite (FindFold around the scoring band, eventfold around the credential fix) and their READMEs say so. I use AI tooling for most of the typing and I can explain every line it produced.
